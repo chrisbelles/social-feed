@@ -1,10 +1,11 @@
 import React from 'react';
-
+import DisplayEntries from './components/DisplayEntries/DisplayEntries';
+import './components/AddName'
 
 function App() {
   return (
     <div>
-      Hello World!
+      <AddName />
     </div>
   );
 }
