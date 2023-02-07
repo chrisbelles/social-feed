@@ -20,7 +20,7 @@ const AddName = (props) => {
                 <label>Enter Name</label>
                 <input type='name' className="form-control" value={name}onChange={(event) => setName(event.target.value)}/>  
             </div>
-            <button type='submit' className="btn btn-primary" style={{'margin-top': '1em'}}>Add</button>
+            <button type='submit' className="btn btn-primary" style={{'margin-top': '1em'}}>Submit</button>
         </form>
      );
 }
