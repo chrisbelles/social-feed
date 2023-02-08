@@ -1,25 +1,20 @@
 
 const DisplayEntries = (props) => {
-    return ( 
-        <table className='table'>
-            <thead>
-            <tr>
-                <th>Social Feed</th>
-                <th>Name</th>
-                <th>Comment</th>
-            </tr>
-            </thead>
-            <tbody>
-                {props.parentEntries.map((entry, index) => {
-                return (
-                    <tr key={index}>
-                    <td>{entry.name}</td>
-                    <td>{entry.comment}</td>
-                    </tr>
-                );
-                })}
-            </tbody>
-        </table>
+    return (
+        <div className="body-container" style={{}}>
+            <table className='table'>
+                <tbody className="background" style={{ color: 'blue', lineHeight : 10, padding: 20 }}>
+                    {props.parentEntries.map((entry, index) => {
+                    return (
+                        <tr key={index}>
+                        <td>{entry.name}</td>
+                        <td>{entry.comment}</td>
+                        </tr>
+                    );
+                    })}
+                </tbody>
+            </table>
+        </div>
      );
 }
  

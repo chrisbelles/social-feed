@@ -20,12 +20,12 @@ function App() {
       <div className='row'>
         <h3 style={{margin: '1em'}}>Social
         <small className='text-muted'>Feed</small></h3>
-        <div className='col-md-6'>
+        <div className='border-box'>
           <div className='border-box'>
             <DisplayEntries parentEntries={entries} />
           </div>
           <div className='border-box'>
-            <AddName addNewEntryProperty={addNewEntry}/>
+            <AddName addNewEntryProperty={addNewEntry} />
           </div>
         </div>
       </div>
