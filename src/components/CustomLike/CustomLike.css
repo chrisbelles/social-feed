@@ -1,0 +1,18 @@
+button {
+    color: gray;
+    padding: 1em;
+    display: inline-block;
+
+}
+
+button:hover {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5);
+}
+
+.active {
+    background-color: green;
+}
+
+.inactive {
+    background-color: gray;
+}
