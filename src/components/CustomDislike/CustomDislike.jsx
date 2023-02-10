@@ -16,7 +16,7 @@ const CustomDislike = (props) => {
     }
         return(
             <div>
-                <button className={buttonClass} onClick={handleClick}>{props.message}</button>
+                <button className={buttonClass1} onClick={handleClick}>{props.message}</button>
             </div>
         )
 }
