@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
 import './CustomLike.css'
-import ThumbUpAltOutlinedIcon from '@mui/icons-material/ThumbUpAltOutlined';
-import Button from '@material-ui/core/Button';
 
 const CustomLike = (props) => {
 
