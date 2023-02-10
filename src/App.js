@@ -22,13 +22,10 @@ function App() {
         <small className='text-muted'>Feed</small></h3>
         <div className='border-box align-items-center justify-content-center text-center'>
           <div className='border-box align-items-center justify-content-center text-center'>
-            <DisplayEntries parentEntries={entries} />
-          </div>
-          <div className='border-box align-items-center justify-content-center text-center'>
             <AddName addNewEntry={addNewEntry} />
           </div>
-          <div>
-            
+          <div className='border-box align-items-center justify-content-center text-center'>
+            <DisplayEntries parentEntries={entries} />
           </div>
         </div>
       </div>
