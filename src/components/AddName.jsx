@@ -3,8 +3,8 @@ import './AddName.css'
 
 const AddName = (props) => {
 
-    const [name, setName] = useState('')
-    const [comment, setComment] = useState('')
+    const [name, setName] = useState('');
+    const [comment, setComment] = useState('');
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -13,8 +13,7 @@ const AddName = (props) => {
             comment: comment,
         };
         console.log(newEntry)
-        props.addNameEntryProperty(newEntry)
-        props.addCommentEntryProperty(newEntry)
+        props.addNewEntry(newEntry)
     }
 
     return ( 
@@ -29,6 +28,7 @@ const AddName = (props) => {
             </div>
             <button type='submit' className="btn btn-primary" style={{'marginTop': '1em'}}>Create</button>
         </form>
+
      );
 }
  

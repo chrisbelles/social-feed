@@ -1,3 +1,5 @@
+import "../AddName";
+
 
 const DisplayEntries = (props) => {
     return (
