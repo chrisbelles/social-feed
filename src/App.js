@@ -25,14 +25,10 @@ function App() {
           <div className='border-box' style={{}}>
             <AddName addNewEntry={addNewEntry} />
           </div>
-          <div className='comment-border-box' style={{}}>
             <DisplayEntries parentEntries={entries} />
-            <CustomLike />
-            <CustomDislike />
           </div>
         </div>
       </div>
-    </div>
   );
 }
 
