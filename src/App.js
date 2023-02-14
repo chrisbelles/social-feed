@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import DisplayEntries from './components/DisplayEntries/DisplayEntries';
 import AddName from './components/AddName'
-import CustomLike from './components/CustomLike/CustomLike';
-import CustomDislike from './components/CustomDislike/CustomDislike';
+
 
 
 function App() {
@@ -29,6 +28,7 @@ function App() {
           </div>
         </div>
       </div>
+
   );
 }
 

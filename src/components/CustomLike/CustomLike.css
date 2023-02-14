@@ -1,7 +1,8 @@
 button {
-    color: gray;
     padding: 1em;
     display: inline-block;
+    border: none;
+    margin-right: 10px;
 
 }
 

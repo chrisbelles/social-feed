@@ -2,15 +2,17 @@ import CustomDislike from "../CustomDislike/CustomDislike";
 import CustomLike from "../CustomLike/CustomLike";
 
 
-const DisplayPost = (props) => {
+const DisplayPosts = (props) => {
     return ( 
-        <div>
+        <div className="post-wrapper">
             <h1>{props.entry.name}</h1>
             <p>{props.entry.comment}</p>
-            <CustomDislike /> 
-            <CustomLike />
-        </div>
+            <div className="feedback-buttons">
+            <CustomLike /> 
+            <CustomDislike />
+            </div>
+        </div>    
      );
 }
  
-export default DisplayPost;
+export default DisplayPosts;
