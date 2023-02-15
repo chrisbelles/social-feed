@@ -3,32 +3,38 @@ import DisplayEntries from './components/DisplayEntries/DisplayEntries';
 import AddName from './components/AddName'
 
 
-
 function App() {
+  const [entries, setEntries] = useState([
+    { name: "Chris", comment: "First! 😂" },
+  ]);
 
-  const [entries, setEntries] = useState([{name: 'Chris', comment: 'First! 😂'}])
-
-  function addNewEntry(entry){
-
+  function addNewEntry(entry) {
     let tempEntries = [...entries, entry];
 
     setEntries(tempEntries);
   }
 
   return (
-    <div className='container-fluid'>
-      <div className='row'>
-        <h3 style={{margin: '1em'}}>Social
-        <small className='text-muted'>Feed</small></h3>
-        <div className='border-box align-items-center justify-content-center text-center'>
-          <div className='border-box' style={{}}>
-            <AddName addNewEntry={addNewEntry} />
+      <div className="container-fluid" style={{background: "teal"}}>
+      <header className="card" style={{maxWidth: '65%'}}>
+        <h4>
+          Social
+          <small className="text-muted">Feed</small>
+        </h4>
+      </header>
+      <div>
+        <body>
+          <div className="border-box align-items-center justify-content-center text-center">
+            <div className="card" style={{maxWidth: '65%', }}>
+              <AddName addNewEntry={addNewEntry} />
+            </div>
+            <div className="card" style={{maxWidth: '65%'}}>
+              <DisplayEntries parentEntries={entries} />
+            </div>
           </div>
-            <DisplayEntries parentEntries={entries} />
-          </div>
-        </div>
+        </body>
       </div>
-
+    </div>
   );
 }
 

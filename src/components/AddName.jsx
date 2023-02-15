@@ -1,6 +1,22 @@
 import React, { useState } from 'react';
 import './AddName.css'
 
+const styles = {
+    label:  {
+        float: 'left'
+    
+    },
+    nameInput: {
+        marginLeft : '10%',
+        width : '60%'
+    },
+    postInput: {
+        marginLeft : '10%',
+        width : '60%',
+
+    },
+}
+
 const AddName = (props) => {
 
     const [name, setName] = useState('');
@@ -18,15 +34,14 @@ const AddName = (props) => {
 
     return ( 
         <form onSubmit={handleSubmit} className='form-grid'>
-            <div className='form-group'>
-                <div className='input-wrap'>
-                    <label className='box-prefix'>Name</label>
-                    <input type='name' className="form-control" value={name}onChange={(event) => setName(event.target.value)}/>
-                    <label className='box-prefix'>Post</label>
-                    <input type='comment' className="form-control" value={comment}onChange={(event) => setComment(event.target.value)}/>
-                </div>  
+            <div className='form-group' style={{padding: '2em'}}>
+                <label className="text-muted" style={styles.label}>Name</label>
+                <input type='name' className="form-control" style={styles.nameInput} value={name}onChange={(event) => setName(event.target.value)}/>
+                <br></br>
+                <label className="text-muted" style={styles.label}>Post</label>
+                <textarea rows="5" cols="80" type='comment' className="form-control" style={styles.postInput}value={comment}onChange={(event) => setComment(event.target.value)}/>
             </div>
-            <button type='submit' className="btn btn-primary" style={{'marginTop': '1em'}}>Create</button>
+            <button type='submit' className="btn btn-primary" style={{'marginTop': '1em',float: "right"}}>Create</button>
         </form>
 
      );
