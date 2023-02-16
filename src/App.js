@@ -28,7 +28,7 @@ function App() {
             <div className="card mx-auto my-5" style={{maxWidth: '65%', }}>
               <AddName addNewEntry={addNewEntry} />
             </div>
-            <div className="card mx-auto my-5" style={{maxWidth: '65%'}}>
+            <div className="mx-auto my-5" style={{maxWidth: '65%'}}>
               <DisplayEntries parentEntries={entries} />
             </div>
           </div>

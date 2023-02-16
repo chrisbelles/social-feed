@@ -1,4 +1,4 @@
-button {
+.CustomLike {
     padding: 1.75%;
     float: right;
     border: .1%;
@@ -8,10 +8,24 @@ button:hover {
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5);
 }
 
-.active {
+.active-like {
     background-color: green;
 }
 
-.inactive {
+.inactive-like {
     background-color: gray;
+}
+
+.active-dislike {
+  background-color: red;
+}
+
+.inactive-dislike {
+  background-color: gray;
+}
+
+.button {
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
 }
