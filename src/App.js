@@ -24,7 +24,7 @@ function App() {
       </header>
       <div>
         <body className="bg-teal">
-          <div className="border-box align-items-center justify-content-center text-center">
+          <div className="">
             <div className="card mx-auto my-5" style={{maxWidth: '65%', }}>
               <AddName addNewEntry={addNewEntry} />
             </div>
