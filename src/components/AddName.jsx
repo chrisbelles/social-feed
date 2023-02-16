@@ -41,7 +41,7 @@ const AddName = (props) => {
                 <label className="text-muted" style={styles.label}>Post</label>
                 <textarea rows="5" cols="80" type='comment' className="form-control" style={styles.postInput}value={comment}onChange={(event) => setComment(event.target.value)}/>
             </div>
-            <button type='submit' className="btn btn-primary" style={{'marginTop': '1em',float: "right"}}>Create</button>
+            <button type='submit' className="btn btn-primary" style={{'marginTop':'1em',float:"right",'border-radius': '20px'}}>Create</button>
         </form>
 
      );

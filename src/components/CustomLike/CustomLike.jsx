@@ -2,35 +2,35 @@ import React, {useState} from 'react'
 import './CustomLike.css'
 
 function CustomLike(){
-    const [likeactive,setlikeactive] = useState(false)
-    const [dislikeactive,setdislikeactive] = useState(false)
+    const [like,setlike] = useState(false)
+    const [dislike,setdislike] = useState(false)
 
     function likef(){
-        if(likeactive){
-            setlikeactive(false)
+        if(like){
+            setlike(false)
         }else{
-            setlikeactive(true)
-            if(dislikeactive){
-                setdislikeactive(false)
+            setlike(true)
+            if(dislike){
+                setdislike(false)
             }
         }
     }
 
     function dislikef(){
-        if(dislikeactive){
-            setdislikeactive(false)
+        if(dislike){
+            setdislike(false)
         }else{
-            setdislikeactive(true)
-            if(likeactive){
-                setlikeactive(false)
+            setdislike(true)
+            if(like){
+                setlike(false)
             }
         }
     }
 
     return(
         <div className='CustomLike'>
-        <button onClick={likef} className={[likeactive? 'active-like': 'button']}> Like </button>
-        <button onClick={dislikef} className={[dislikeactive? 'active-dislike': 'button']}> Dislike </button>
+        <button onClick={dislikef} className={[dislike? 'active-dislike': 'button']}> Dislike </button>
+        <button onClick={likef} className={[like? 'active-like': 'button']}> Like </button>
         </div>
     );
 }
